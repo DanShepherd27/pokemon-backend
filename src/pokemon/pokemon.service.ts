@@ -16,14 +16,14 @@ export class PokemonService {
   async getMany(type?: string): Promise<string[]> {
     // Simulating a database call or external API call
     const allPokemon = [
-      'Pikachu',
-      'Charmander',
-      'Bulbasaur',
-      'Squirtle',
-      'Jigglypuff',
-      'Meowth',
-      'Eevee',
-      'Snorlax',
+      'pikachu',
+      'charmander',
+      'bulbasaur',
+      'squirtle',
+      'jigglypuff',
+      'meowth',
+      'eevee',
+      'snorlax',
     ];
 
     if (type) {

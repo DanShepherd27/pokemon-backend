@@ -10,7 +10,7 @@ export class PokemonController {
     return await this.pokemonService.getMany(type);
   }
 
-  @Get()
+  @Get('one')
   async getOne(@Query('name') name: string) {
     return await this.pokemonService.getOne(name);
   }
