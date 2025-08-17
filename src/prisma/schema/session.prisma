@@ -1,0 +1,11 @@
+model Session {
+    id Int @id @default(autoincrement())
+    userId Int @map("user_id")
+    hash String @unique
+    createdAt DateTime @default(now()) @map("created_at")
+    udpatedAt DateTime @updatedAt @map("updated_at")
+
+    user User @relation(fields: [userId], references: [id])
+
+    @@map("session")
+}
